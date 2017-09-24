@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/1976Hoosiers/twig/issues"
   },
-  "homepage": "https://github.com/1976Hoosiers/twig#readme"
+  "homepage": "https://github.com/1976Hoosiers/twig#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
 }
