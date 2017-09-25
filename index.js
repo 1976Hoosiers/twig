@@ -25,6 +25,7 @@ client.messages.create({
 }, function(err, message) { 
     console.log(message.sid); 
 });
+}
 
 // look in the environment variable PORT for this value
 // if its not present, use 3000
