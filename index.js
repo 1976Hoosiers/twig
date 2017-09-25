@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 // respond with "hello rabah" when a GET request is made to /rabah
 app.get('/rabah', function (req, res) {
-  res.send('hello rabah')
+  res.send('Get hype mode')
 });
 
 // look in the environment variable PORT for this value
