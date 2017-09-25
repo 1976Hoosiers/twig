@@ -11,7 +11,19 @@ app.get('/', function (req, res) {
 
 // respond with "hello rabah" when a GET request is made to /rabah
 app.get('/rabah', function (req, res) {
-  res.send('Get hype mode')
+// Twilio Credentials 
+var accountSid = 'AC368afb7545f5c85c1e85f67d5f417573'; 
+var authToken = 'eb7f3039336bf151266238455fa45bed'; 
+ 
+//require the Twilio module and create a REST client 
+var client = require('twilio')(accountSid, authToken); 
+  
+client.messages.create({ 
+    to: "+13173586459", 
+    from: "+15125999970", 
+    body: "OMG rabah is the coolest 🤴", 
+}, function(err, message) { 
+    console.log(message.sid); 
 });
 
 // look in the environment variable PORT for this value
